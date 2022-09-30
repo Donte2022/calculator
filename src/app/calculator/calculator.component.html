@@ -1,21 +1,21 @@
-<!--<input #num1 type="number">-->
-<!--<select #operation>-->
-<!--  <option>+</option>-->
-<!--  <option>-</option>-->
-<!--  <option>*</option>-->
-<!--  <option>/</option>-->
-<!--</select>-->
-<!--<input #num2 type="number">-->
+<div class="d-grid gap-2 col-6 mx-auto">
 <input class="form-control" #num1 type="number">
-<div class="input-group mb-0">
 <select class="form-select" #operation>
   <option>+</option>
   <option>-</option>
   <option>*</option>
   <option>/</option>
 </select>
-</div>
 <input class="form-control" #num2 type="number">
-<button class="btn btn-primary" (click)="onCal(num1.valueAsNumber, operation.value, num2.valueAsNumber)">Submit</button>
-<p>Results: {{results}}</p>
+</div>
+<div class="d-grid gap-2 col-6 mx-auto">
+  <button class="btn btn-primary" (click)="onCal
+(num1.valueAsNumber, operation.value, num2.valueAsNumber)">
+  Submit</button>
+</div>
 
+<div class="d-grid gap-2 col-6 mx-auto">
+<span class="input-group-text">
+  <p>Results: <b>{{results}}</b></p>
+</span>
+</div>
