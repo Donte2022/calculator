@@ -1,18 +1,21 @@
-<input #num1 type="number">
-<select #operation>
+<!--<input #num1 type="number">-->
+<!--<select #operation>-->
+<!--  <option>+</option>-->
+<!--  <option>-</option>-->
+<!--  <option>*</option>-->
+<!--  <option>/</option>-->
+<!--</select>-->
+<!--<input #num2 type="number">-->
+<input class="form-control" #num1 type="number">
+<div class="input-group mb-0">
+<select class="form-select" #operation>
   <option>+</option>
   <option>-</option>
   <option>*</option>
   <option>/</option>
 </select>
-<input #num2 type="number">
-<button (click)="onCal(num1.valueAsNumber, operation.value, num2.valueAsNumber)">Submit</button>
-<p>Resullts: </p>
-<input type="text">
-<button (click)="getText()">log</button>
+</div>
+<input class="form-control" #num2 type="number">
+<button class="btn btn-primary" (click)="onCal(num1.valueAsNumber, operation.value, num2.valueAsNumber)">Submit</button>
+<p>Results: {{results}}</p>
 
-
-<input #textInfo type="text">
-Type Here:
-<!--You need to pass a value from the input as an parameter in the ()-->
-<button (click)="logMessage(textInfo.value)">LogThis!</button>
